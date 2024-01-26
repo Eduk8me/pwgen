@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator Extraordinaire</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  .highlight {
+        background-color: yellow;
+        transition: background-color 1s ease-out;
+    }
+	.list-group-item {
+    font-family: 'Source Code Pro', monospace;
+	}
+    .container {
+        max-width: 40%; /* Adjust as per your design needs */
+        margin: auto;
+    }
+
+    #passwordList {
+        max-width: 100%; /* This will now be relative to the container's width */
+        margin: auto;
+    }
+   .actions-container {
+        margin-left: auto;
+    }
+</style>
+
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mt-5">Ultra-Secure Password Generator</h1>
+        <div class="btn-group mt-3" role="group">
+			<button type="button" class="btn btn-secondary word-count-btn" onclick="generatePasswords(2)">2 Words (Default)</button>
+			<button type="button" class="btn btn-secondary word-count-btn" onclick="generatePasswords(3)">3 Words</button>
+			<button type="button" class="btn btn-secondary word-count-btn" onclick="generatePasswords(4)">4 Words</button>
+			<button type="button" class="btn btn-secondary word-count-btn" onclick="generatePasswords(5)">5 Words</button>
+
+        </div>
+        <ul class="list-group mt-3" id="passwordList"></ul>
+    </div>
+
+    <script src="your-script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
+
